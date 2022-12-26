@@ -9,7 +9,7 @@ const TextField = (props) => {
             <label>
                 {props.label}
             </label>
-            <input placeholder={placeholderMod}/>
+            <input required={props.requiredC} placeholder={placeholderMod}/>
         </div>
     )
 }
