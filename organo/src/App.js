@@ -4,11 +4,11 @@ import FormField from './components/FormField';
 
 function App() {
 
-  const [employee, setEmployee] = useState([])
+  const [employers, setEmployers] = useState([])
 
   const toTheNewRegisteredEmployee = (employee) => {
     console.log(employee)
-    setEmployee([...employers, employee])
+    setEmployers([...employers, employee])
   }
 
   return (
