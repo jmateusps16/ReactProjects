@@ -23,7 +23,7 @@ const FormField = (props) => {
 
     const whenSave = (event) => {
         event.preventDefault()
-        props.aoColaboradorCadastrado({
+        props.toTheRegisteredEmployee({
             name,
             role,
             image,

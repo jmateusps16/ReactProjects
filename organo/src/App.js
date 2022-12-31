@@ -4,17 +4,17 @@ import FormField from './components/FormField';
 
 function App() {
 
-  const [colaboradores, setColaboradores] = useState([])
+  const [employee, setEmployee] = useState([])
 
-  const aoNovoColaboradorCadastrado = (colaborador) => {
-    console.log(colaborador)
-    setColaboradores([...colaboradores, colaborador])
+  const toTheNewRegisteredEmployee = (employee) => {
+    console.log(employee)
+    setEmployee([...employers, employee])
   }
 
   return (
     <div className="App">
       <Banner />
-      <FormField aoColaboradorCadastrado={colaborador => aoNovoColaboradorCadastrado(colaborador)}/>
+      <FormField toTheRegisteredEmployee={employee => toTheNewRegisteredEmployee(employee)}/>
     </div>
   );
 }
