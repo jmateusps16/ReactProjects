@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
 import FormField from './components/FormField';
+import Team from './components/Team';
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Banner />
       <FormField toTheRegisteredEmployee={employee => toTheNewRegisteredEmployee(employee)}/>
+      <Team name={"Teste"}/>
     </div>
   );
 }
