@@ -3,7 +3,11 @@ import './Team.css'
 
 const Team = (props) => {
     const cssSecondaryColor = {backgroundColor: props.secondaryColor}
+    
     return (
+        //também poderia ter feito com o && não sendo necessário utilizar o :'' ao final
+        //props.employers.length > 0 &&
+        props.employers.length > 0 ?
         <section className='team' style={cssSecondaryColor}>
             <h3 style={{borderColor: props.primaryColor}}>
                 {props.name}
@@ -16,6 +20,7 @@ const Team = (props) => {
                 />)}
             </div>
         </section>
+        : ''
     )
 }
 
