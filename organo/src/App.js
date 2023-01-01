@@ -1,4 +1,3 @@
-import { toHaveErrorMessage } from '@testing-library/jest-dom/dist/matchers';
 import { useState } from 'react';
 import Banner from './components/Banner';
 import FormField from './components/FormField';
@@ -55,7 +54,13 @@ function App() {
     <div className="App">
       <Banner />
       <FormField team={team.map(team => team.name)} toTheRegisteredEmployee={employee => toTheNewRegisteredEmployee(employee)}/>
-      {team.map(team => <Team key={team.name} name={team.name} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>)}
+      {team.map(team => <Team 
+        key={team.name} 
+        name={team.name} 
+        primaryColor={team.primaryColor} 
+        secondaryColor={team.secondaryColor}
+        employers={employers}
+      />)}
     </div>
   );
 }

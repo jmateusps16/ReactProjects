@@ -8,7 +8,13 @@ const Team = (props) => {
             <h3 style={{borderColor: props.primaryColor}}>
                 {props.name}
             </h3>
-            <Employee />
+            <div className='employers'>
+                {props.employers.map(employee => <Employee 
+                    name={employee.name}
+                    role={employee.role}
+                    image={employee.image}
+                />)}
+            </div>
         </section>
     )
 }
