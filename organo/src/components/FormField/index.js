@@ -19,7 +19,11 @@ const FormField = (props) => {
             image,
             team
         })
-        console.log('Form foi submetido', name, role, image, team)
+        
+        setName('')
+        setRole('')
+        setImage('')
+        setTeam('')
     }
 
     return (
