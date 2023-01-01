@@ -6,16 +6,6 @@ import './FormField.css'
 
 const FormField = (props) => {
 
-    const teams = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [name, setName] = useState('')
     const [role, setRole] = useState('')
     const [image, setImage] = useState('')
@@ -60,7 +50,7 @@ const FormField = (props) => {
                 <DropdownList 
                     requiredC={true} 
                     label="Times" 
-                    itens={teams} 
+                    itens={props.team} 
                     valueC={team}
                     toTheChange={teamValue => setTeam(teamValue)}
                     />
