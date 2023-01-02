@@ -47,7 +47,6 @@ function App() {
   const [employers, setEmployers] = useState([])
 
   const toTheNewRegisteredEmployee = (employee) => {
-    console.log(employee)
     setEmployers([...employers, employee])
   }
 

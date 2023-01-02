@@ -14,6 +14,7 @@ const Team = (props) => {
             </h3>
             <div className='employers'>
                 {props.employers.map(employee => <Employee 
+                    key={employee.name}
                     name={employee.name}
                     role={employee.role}
                     image={employee.image}
